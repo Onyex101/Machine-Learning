@@ -1,80 +1,49 @@
-*Instructions: Click on the raw button in the upper right hand corner of this box.  Copy and paste the template into the README.md document on your github.  Fill in the titles, information and links where prompted! Feel free to stray a bit to suit your project but try to stick to the format as closely as possible for consistency across DSWG projects.*
+<h1 align="center"> Facial Expression and Emotion Classifier </h1>
+<h3 align="center"> The purpose of this project is to classify people's emotions based on their facial images. The system automatically monitors people's facial expressions. </h3>  
 
-# Project Name
-This project is a part of the [Data Science Working Group](http://datascience.codeforsanfrancisco.org) at [Code for San Francisco](http://www.codeforsanfrancisco.org).  Other DSWG projects can be found at the [main GitHub repo](https://github.com/sfbrigade/data-science-wg).
+</br>
 
-#### -- Project Status: [Active, On-Hold, Completed]
+<p align="center"> 
+  <img src="images/result.png" alt="Sample signal" width="70%" height="70%">
+</p>
 
-## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
+<h3 align="center"> Project Status: [Completed]</h3> 
 
-### Partner
-* [Name of Partner organization/Government department etc..]
-* Website for partner
-* Partner contact: [Name of Contact], [slack handle of contact if any]
-* If you do not have a partner leave this section out
+
+## Project Description
+The system automatically monitors people's facial expressions. 20,000+ images with their associated facial expression labels and 2000+ images with facial keypoints annotations. two deep Neural Networks (DNN) were developed and deployed. The first model leverages Convolutional Neural Networks and Residual blocks to predict facial keypoints, The second DNN model classifies people's emotions such as anger, disgust, happiness, sadness and suprise.
 
 ### Methods Used
 * Inferential Statistics
 * Machine Learning
 * Data Visualization
 * Predictive Modeling
-* etc.
+* Deep Neural Networks
 
 ### Technologies
-* R 
 * Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
+* Pandas, Colab
+* TensorFlow 2.11.1
+* Keras API
+* ResNet50
+* Matplotlib
 * etc. 
 
-## Project Description
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+## Learning Outcomes
 
-## Needs of this project
+- Understand how to leverage the power of Artificial Intelligence AI to detect people's emotions
+- Understand the theory and intuition behind residual networks
+- Develop Artificial Neural Network (ANNs) models and train them in Google Colab while leveraging the power of GPUs and TPUs
+- Build, train, test and deploy ResNets to perform Image classification using real world datasets
+- Perform Image Augmentation to improve the generalization capability of the model
+- Evaluate trained ResNet on testing data using various KPIs
+- Know the difference between various activation functions such as Sigmoid and Rectified Linear Units (RELU)
+- Appy Keras API and TensorFlow 2.0 to build DNNs
+- Understand the difference between precison and recall
+- Perform Joint models predictions from both key facial points model and facial expressions classification model
+- Deploy both Deep Neural Networks using TensorFlow 2.0 Serving to make predictions 
 
-- frontend developers
-- data exploration/descriptive statistics
-- data processing/cleaning
-- statistical modeling
-- writeup/reporting
-- etc. (be as specific as possible)
-
+![IMAGE ALT TEXT HERE](images/kpi.png)
 ## Getting Started
-
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
-
-    *If using offline data mention that and how they may obtain the data from the froup)*
-    
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
-
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages) create another "setup.md" file and link to it here*  
-
-5. Follow setup [instructions](Link to file)
-
-## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
-
-
-## Contributing DSWG Members
-
-**Team Leads (Contacts) : [Full Name](https://github.com/[github handle])(@slackHandle)**
-
-#### Other Members:
-
-|Name     |  Slack Handle   | 
-|---------|-----------------|
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
-|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
-
-## Contact
-* If you haven't joined the SF Brigade Slack, [you can do that here](http://c4sf.me/slack).  
-* Our slack channel is `#datasci-projectname`
-* Feel free to contact team leads with any questions or if you are interested in contributing!
+2. Raw Data is being kept [here](https://drive.google.com/drive/folders/1eO3R7uXo93bZ4HYO6RTT5a7-hjotpC5W?usp=sharing) within this repo.
